@@ -1,12 +1,22 @@
-Some useful command:
-(1)The default working dictionary is in: c/Users/Xinlu Xiao
-   so if you want or modify the dictionary, you can just put in
-   "cd Coding" (this will lead you to the Coding dictionary)
-(2)要建立一个远程库，使用命令 
-   git remote add origin git@github.com:XinluXiao/Coding.git
-(3)关联后，使用命令
-   git push -u origin master
-(4) Remember to put the file under the dictionary
-    if you want to check the dictionary, just put in "pwd"
-
+﻿Some useful command:
+(1)Check the current dictionary: "pwd"
+(2)Change the dictionary: "cd Coding" (remember the current dictionary is "c/Users/Xinlu Xiao", and you can go back to this dictionary by using "cd")
+(3)Step to add new file in to the repository(example: Coding)
+   (i)If you want to create a new repository
+        $ mkdir learngit
+	$ cd learngit
+	$ pwd
+   (ii)Initialize the repository
+        $ git init
+   (iii)Put your file under the dictionary
+   (iv)Add the file to the repository
+        $ git add readme.txt
+   (v)Commit the file to the repository
+	$ git commit -m "wrote a readme file"
+   (vi)Create a new repository in the github.com
+   (vii)要建立一个远程库，使用命令 
+        $ git remote add origin git@github.com:XinluXiao/Coding.git
+   (viii)关联后，使用命令
+   	$ git push -u origin master (after the first time: git push origin master)
+   
 
