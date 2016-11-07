@@ -24,5 +24,6 @@
    (i)git rm new.txt
    (ii)git commit -m"delete the no need file"
    (iii)git push origin master
+(5)git pull
    
 
