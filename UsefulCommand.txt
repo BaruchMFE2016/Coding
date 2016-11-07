@@ -24,6 +24,9 @@
    (i)git rm new.txt
    (ii)git commit -m"delete the no need file"
    (iii)git push origin master
-(5)git pull
+(5)Before push need to check whether need "git pull"
+(6)Step to add new folder and delete new folder under the repository:
+   (i)add new folder: git add IQSeminar(then have to commit and push)
+   (ii)delete new folder: git rm -r IQSeminar(then have to commit and push)
    
 
