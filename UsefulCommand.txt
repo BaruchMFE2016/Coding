@@ -18,5 +18,11 @@
         $ git remote add origin git@github.com:XinluXiao/Coding.git
    (viii)关联后，使用命令
    	$ git push -u origin master (after the first time: git push origin master)
+   (ix)How to clone the repository?
+	$ git clone git@github.com:michaelliao/gitskills.git
+(4)Step to delete file in the repository(example: Coding)
+   (i)git rm new.txt
+   (ii)git commit -m"delete the no need file"
+   (iii)git push origin master
    
 
