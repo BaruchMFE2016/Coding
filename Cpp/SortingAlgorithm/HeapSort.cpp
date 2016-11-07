@@ -5,43 +5,58 @@
 
 using namespace std;
 
-void max_heapify(vector<double> &a, int i, int n)
+void HeapSort(vector<double> &a, int length)
 {
-	int j, temp;
-	temp = a[i];
-	j = 2 * i;
-	while (j <= n)
+	buildheap(a, length);
+	int heapsize, i;
+	double temp;
+	heapsize = length - 1;
+	for (i = heapsize; i >= 0; i--)
 	{
-		if (j < n && a[j + 1] > a[j])
-			j = j + 1;
-		if (temp > a[j])
-			break;
-		else if (temp <= a[j])
-		{
-			a[j / 2] = a[j];
-			j = 2 * j;
-		}
+		temp = a[0];
+		a[0] = a[heapsize];
+		a[heapsize] = temp;
+		heapsize--;
+		satisfyheap(a, 0, heapsize);
 	}
-	a[j / 2] = temp;
-	return;
 }
-void HeapSort(vector<double> &a, int n)
+
+void buildheap(vector<double> &a, int length)
 {
-	int i, temp;
-	for (i = n; i >= 2; i--)
+	int i, heapsize;
+	heapsize = length - 1;
+	for (i = (length / 2); i >= 0; i--)
+	{
+		satisfyheap(a, i, heapsize);
+	}
+}
+
+void satisfyheap(vector<double> &a, int i, int heapsize)
+{
+	int l, r, largest;
+	double temp;
+	l = 2 * i;
+	r = 2 * i + 1;
+	if (l <= heapsize && a[l] > a[i])
+	{
+		largest = l;
+	}
+	else
+	{
+		largest = i;
+	}
+	if (r <= heapsize && a[r] > a[largest])
+	{
+		largest = r;
+	}
+	if (largest != i)
 	{
 		temp = a[i];
-		a[i] = a[1];
-		a[1] = temp;
-		max_heapify(a, 1, i - 1);
+		a[i] = a[largest];
+		a[largest] = temp;
+		satisfyheap(a, largest, heapsize);
 	}
 }
-void build_maxheap(vector<double> &a, int n)
-{
-	int i;
-	for (i = n / 2; i >= 1; i--)
-	{
-		max_heapify(a, i, n);
-	}
-}
+
+
 
