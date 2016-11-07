@@ -19,9 +19,6 @@ void MergeSort(vector<double> &A, int l, int r); //l is for the left index, r is
 void Merge(vector<double> &A, int l, int m, int r);
 
 //Heap Sort
-//void max_heapify(vector<double> &a, int i, int n);
-//void HeapSort(vector<double> &a, int n);
-//void build_maxheap(vector<double> &a, int n);
 void HeapSort(vector<double> &a, int length);
 void buildheap(vector<double> &a, int length);
 void satisfyheap(vector<double> &a, int i, int heapsize);
