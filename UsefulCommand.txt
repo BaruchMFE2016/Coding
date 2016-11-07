@@ -1,0 +1,12 @@
+Some useful command:
+(1)The default working dictionary is in: c/Users/Xinlu Xiao
+   so if you want or modify the dictionary, you can just put in
+   "cd Coding" (this will lead you to the Coding dictionary)
+(2)要建立一个远程库，使用命令 
+   git remote add origin git@github.com:XinluXiao/Coding.git
+(3)关联后，使用命令
+   git push -u origin master
+(4) Remember to put the file under the dictionary
+    if you want to check the dictionary, just put in "pwd"
+
+
