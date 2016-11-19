@@ -28,5 +28,6 @@
 (6)Step to add new folder and delete new folder under the repository:
    (i)add new folder: git add IQSeminar(then have to commit and push)
    (ii)delete new folder: git rm -r IQSeminar(then have to commit and push)
+(7)Go back to the old dict: cd ../
    
 
