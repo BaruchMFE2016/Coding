@@ -29,5 +29,11 @@
    (i)add new folder: git add IQSeminar(then have to commit and push)
    (ii)delete new folder: git rm -r IQSeminar(then have to commit and push)
 (7)Go back to the old dict: cd ../
-   
+(8)Create a new branch: git branch <name>
+(9)Go to the different branch: git checkout <branch name>
+                               git branch -a     #then you go to the branch you want to work on
+(10)See the change of the branch: git log
+(11)Merge the branch: git merge <branch name>
+(12)Delete the branch: git branch -d <name>
+(13)Check out the master now: git branch
 
