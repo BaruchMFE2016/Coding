@@ -36,4 +36,6 @@
 (11)Merge the branch: git merge <branch name>
 (12)Delete the branch: git branch -d <name>
 (13)Check out the master now: git branch
+(14)Rename the folder: git mv Cpp C++ (Cpp is the old name, C++ is the new name)
+(15)Rename the file: git mv CppReadMe.txt C++ReadMe.txt (CppReadMe.txt is the old name, C++ReadMe.txt is the new name)
 
