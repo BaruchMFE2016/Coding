@@ -8,4 +8,7 @@ Create some useful command in the Linux command line:
 (7)Redo: Ctrl + R
 (8)To exit ":" + q
 (9)To save and then exit: ":" + x
-(10)Still need to learn more
+(10)gcc compile: g++ <filename>
+(11)Run the code: ./a.out
+(12)Use vim: vim <filename>
+(13)See the last command: "The up arrow"
