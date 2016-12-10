@@ -38,4 +38,8 @@
 (13)Check out the master now: git branch
 (14)Rename the folder: git mv Cpp C++ (Cpp is the old name, C++ is the new name)
 (15)Rename the file: git mv CppReadMe.txt C++ReadMe.txt (CppReadMe.txt is the old name, C++ReadMe.txt is the new name)
-
+(16)Delete the wrong commit(at this time you can not push files): git reset --hard <commit id>
+                                                                  git push origin HEAD --force
+(17)How to check the commit id: git log
+                                or use github
+				
